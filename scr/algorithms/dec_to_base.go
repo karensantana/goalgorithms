@@ -11,7 +11,7 @@ func DecimalToBase(num int, base int) string {
 	if num == 0 {
 		return "0"
 	} else if num < base {
-		return string(num)
+		return strconv.Itoa(num)
 	} else {
 		for keepDividing := true; keepDividing; keepDividing = (num > 0) {
 
